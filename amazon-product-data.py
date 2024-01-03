@@ -3,12 +3,12 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Global Variables
-#current_page = 1
 url = "https://www.amazon.com/Queen-Piece-Sheet-Set-Breathable/dp/B089XSMCFN"
 page = requests.get(url)
 soup = BeautifulSoup(page.text, "html.parser")
 
 productTitle = soup.find("span", {"id": "productTitle"}).text
+
 print(productTitle)
 
 
