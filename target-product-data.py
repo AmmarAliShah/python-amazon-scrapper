@@ -16,5 +16,5 @@ productTitle = soup.find("h1", {"id": "pdp-product-title-id"}).text
 
 #html = soup.prettify("utf-8")
 
-with open("output1.html", "w") as file:
-    file.write(str(soup))
+# with open('target.html', "w") as file:
+#    file.write(str(soup))
